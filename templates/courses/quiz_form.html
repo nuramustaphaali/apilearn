@@ -1,0 +1,11 @@
+{% extends 'dashboard/base_dashboard.html' %}
+{% block dashboard_content %}
+<div class="tf__courses_details_area">
+    <h3>Create a New Quiz</h3>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="common_btn">Create & Add Questions</button>
+    </form>
+</div>
+{% endblock %}

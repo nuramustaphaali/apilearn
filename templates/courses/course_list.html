@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Available Courses</h2>
+        
+        {% if user.is_authenticated and user.role == 'instructor' %}
+            <a href="{% url 'course-create' %}" class="btn btn-success">
+                + Create New Course
+            </a>
+        {% endif %}
+    </div>
+
+    <div class="row">
+        {% for course in courses %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                {% if course.image %}
+                    <img src="{{ course.image.url }}" class="card-img-top" alt="{{ course.title }}" style="height: 200px; object-fit: cover;">
+                {% else %}
+                    <div class="card-img-top bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <span>No Image</span>
+                    </div>
+                {% endif %}
+
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h5 class="card-title text-truncate" style="max-width: 70%;">{{ course.title }}</h5>
+                        <span class="badge bg-success">${{ course.price }}</span>
+                    </div>
+
+                    {% if user == course.instructor %}
+                        <div class="mb-2">
+                            {% if course.is_published %}
+                                <span class="badge bg-info">Published</span>
+                            {% else %}
+                                <span class="badge bg-warning text-dark">Draft</span>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+
+                    <p class="card-text text-muted small">
+                        {{ course.description|truncatewords:20 }}
+                    </p>
+                    
+                    <p class="card-text"><small class="text-muted">By: {{ course.instructor.username }}</small></p>
+                </div>
+
+                <div class="card-footer bg-white border-top-0">
+                    <div class="d-grid gap-2">
+                        {% if user == course.instructor %}
+                            <a href="{% url 'course-detail' course.pk %}" class="btn btn-outline-dark btn-sm">Manage Content</a>
+                            <div class="btn-group" role="group">
+                                <a href="{% url 'course-edit' course.pk %}" class="btn btn-sm btn-outline-primary">Edit Info</a>
+                                <a href="{% url 'course-delete' course.pk %}" class="btn btn-sm btn-outline-danger">Delete</a>
+                            </div>
+                        {% else %}
+                            <a href="{% url 'course-detail' course.pk %}" class="btn btn-primary">
+                                View Course
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <h4 class="text-muted">No courses available yet.</h4>
+            {% if user.role == 'instructor' %}
+                <p>Get started by creating your first course!</p>
+                <a href="{% url 'course-create' %}" class="btn btn-primary">Create Course</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

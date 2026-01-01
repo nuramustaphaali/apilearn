@@ -1,0 +1,3692 @@
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .tf__about::after {
+        top: 250px;
+    }
+
+    .tf__about::before {
+        bottom: -40px;
+    }
+
+    .tf__faq::after {
+        top: 0;
+    }
+
+    .tf__faq::before {
+        bottom: -50px;
+    }
+
+    .tf__banner_3 .tf__banner_text::before,
+    .tf__banner::before {
+
+        width: 80px;
+        height: 110px;
+    }
+
+    .tf__upcoming_event::after,
+    .tf__banner::after {
+        width: 150px;
+        height: 100px;
+    }
+
+    @keyframes banner_animi_1 {
+        from {
+            top: 120px;
+        }
+
+        to {
+            top: 150px;
+        }
+    }
+
+    .tf__faq_img {
+        width: 650px;
+        height: 650px;
+        left: -50px;
+    }
+
+    .tf__team_3::before,
+    .tf__team_2::before {
+        top: 0;
+    }
+
+
+    .tf__team_2::after {
+        top: 95%;
+    }
+
+    .tf__banner_3 .tf__banner_text::before {
+        width: 105px;
+        height: 100px;
+    }
+
+    .tf__breadcrumb .container::after {
+        top: -155px;
+    }
+
+    .tf__faq_page::after {
+        top: 150px !important;
+    }
+
+    .tf__faq_page::before {
+        right: 3%;
+    }
+
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+
+    /*==================================
+        HOME PAGE START
+    ==================================*/
+    .tf__banner_text p {
+        max-width: 80%;
+    }
+
+    .tf__banner_3 .tf__banner_text::before,
+    .tf__banner::before {
+        right: 3%;
+        width: 80px;
+        height: 110px;
+    }
+
+    .tf__upcoming_event::after,
+    .tf__banner::after {
+        width: 150px;
+        height: 100px;
+    }
+
+    .tf__single_category_text {
+        padding: 30px;
+        padding-left: 60px;
+        margin-left: 40px;
+    }
+
+    .tf__single_category_icon {
+        width: 85px;
+        height: 85px;
+        line-height: 85px;
+        font-size: 40px;
+    }
+
+    .tf__heading_area h2 {
+        font-size: 37px;
+    }
+
+    .tf__single_category_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__about_text p {
+        max-width: 80%;
+    }
+
+    .tf__banner_3 .tf__banner_text::after,
+    .tf__faq::after,
+    .tf__about::after {
+        top: 250px;
+    }
+
+    .tf__faq::before,
+    .tf__about::before {
+        bottom: 0;
+        width: 45px;
+        height: 80px;
+    }
+
+    .tf__about_text a {
+        width: 190px;
+    }
+
+    .tf__single_event_text ul li {
+        margin-bottom: 10px;
+    }
+
+    .tf__single_event_text .title {
+        margin-top: 5px;
+    }
+
+    .tf__faq_img {
+        width: 590px;
+        height: 590px;
+        left: -50px;
+    }
+
+    .tf__faq::after {
+        top: -50px !important;
+    }
+
+    .tf__faq_img::after {
+        top: -55px;
+    }
+
+    .tf__faq::before {
+        right: 80%;
+        bottom: 40px !important;
+    }
+
+    .tf__activities_img {
+        width: auto;
+        height: 100%;
+        margin-left: 0;
+    }
+
+    .tf__about_img {
+        height: 580px;
+    }
+
+    .tf__about::before {
+        left: 35%;
+    }
+
+    .tf__activities_item span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    .tf__activities_item h3 {
+        font-size: 18px;
+    }
+
+    .tf__activities_item {
+        padding: 30px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .tf__activities_slider_area .tf__activities_item::after {
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .tf__scroll_btn {
+        right: 0;
+    }
+
+    .tf__faq_page::after {
+        top: 150px !important;
+    }
+
+    .tf__faq_page::before {
+        right: 92%;
+    }
+
+    /*==================================
+        HOME PAGE END
+    ==================================*/
+
+    /*==================================
+        ABOUT PAGE START
+    ==================================*/
+    .tf__breadcrumb_text h2 {
+        font-size: 55px;
+    }
+
+    .tf__breadcrumb {
+        padding-top: 195px;
+        padding-bottom: 130px;
+    }
+
+    .tf__breadcrumb .container::after {
+        width: 350px;
+        height: 360px;
+        top: -40px;
+    }
+
+    .tf__about_2_img .tf__about_large {
+        width: 540px;
+        height: 540px;
+    }
+
+    .tf__about_2_text ul {
+        max-width: 100%;
+    }
+
+    .tf__about_2_text ul li .text {
+        width: 83%;
+    }
+
+    .tf__about_2_img .tf__about_large::after {
+        top: -50px;
+    }
+
+    /*==================================
+        ABOUT PAGE END
+    ==================================*/
+
+    /*==================================
+        BLOG DETAILS START
+    ==================================*/
+    .tf__blog_details_img,
+    .tf__courses_details_img,
+    .tf__blog_details_center_img {
+        height: 400px;
+    }
+
+    .tf__single_comment_text {
+        max-width: 82%;
+    }
+
+    .tf__single_comment.reply .tf__single_comment_text {
+        max-width: 79%;
+    }
+
+    .tf__sidebar_certificate {
+        padding: 30px;
+    }
+
+    .sidebar_item {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .tf__sidebar_blog.sidebar_item {
+        padding-bottom: 0;
+    }
+
+    .tf__sidebar_blog ul li .text {
+        max-width: 65%;
+    }
+
+    .tf__sidebar_tags {
+        padding-bottom: 5px;
+    }
+
+    .tf__sidebar_apply {
+        height: 400px;
+    }
+
+    .tf__sidebar_apply a {
+        padding: 15px 30px;
+    }
+
+    /*==================================
+        BLOG DETAILS END
+    ==================================*/
+
+    /*==================================
+        CONTACT START
+    ==================================*/
+    .tf__contact_single .text {
+        max-width: 73%;
+    }
+
+    .tf__contact_form p {
+        width: 80%;
+    }
+
+    /*==================================
+        CONTACT END
+    ==================================*/
+
+    /*==================================
+        COURSE DETAILS START
+    ==================================*/
+    .tf__courses_details_header .text {
+        width: 91.5%;
+    }
+
+    .tf__course_overview ul li,
+    .tf__course_overview ol li {
+        width: 100%;
+    }
+
+    .tf__course_instructor_img {
+        height: 300px;
+    }
+
+    /*==================================
+        COURSE DETAILS END
+    ==================================*/
+
+    /*==================================
+        TEAM DETAILS START
+    ==================================*/
+    .tf__team_details_img {
+        height: 370px;
+    }
+
+    .tf__team_page::before {
+        width: 100px;
+        height: 135px;
+    }
+
+    .tf__team_page::after {
+        display: none;
+    }
+
+    /*==================================
+        TEAM DETAILS END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 2 START
+    ==================================*/
+    .tf__team_3::before,
+    .tf__team_2::before {
+        top: 20px;
+    }
+
+    .tf__team_2::after {
+        top: 90%;
+    }
+
+    @keyframes banner_animi_1 {
+        from {
+            top: 120px;
+        }
+
+        to {
+            top: 150px;
+        }
+    }
+
+    .tf__scroll_btn_2 {
+        right: 10px;
+    }
+
+
+    /*==================================
+        HOME PAGE 2 END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 3 START
+    ==================================*/
+    .tf__banner_3 .tf__banner_text::before {
+        right: 40%;
+        width: 85px;
+        height: 80px;
+    }
+
+    .tf__study_contact_text {
+        padding: 160px 0px 30px 150px;
+    }
+
+    .tf__study_contact_text .text {
+        width: 50%;
+        padding-right: 0;
+    }
+
+    .tf__single_counter h4 {
+        font-size: 18px;
+    }
+
+    .tf__counter_3_area::before {
+        top: -175px;
+        right: 190px;
+        width: 120px;
+        height: 115px;
+    }
+
+    .tf__team_3::before {
+        top: 300px;
+        width: 80px;
+        height: 110px;
+    }
+
+    .tf__contact_3_area {
+        padding: 50px;
+    }
+
+    .tf__banner_3 .tf__banner_text::after {
+        top: 350px;
+    }
+
+    .tf__counter_3 p {
+        width: 80%;
+    }
+
+    /*==================================
+        HOME PAGE 3 END
+    ==================================*/
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+
+    /*==================================
+        HOME PAGE START
+    ==================================*/
+    .main_menu .navbar-nav .nav-item {
+        margin-right: 25px;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link,
+    .main_menu .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+    }
+
+    .main_menu .navbar-nav .nav-item .common_btn {
+        padding: 12px 25px !important;
+        font-size: 14px !important;
+    }
+
+    .tf__upcoming_event::after,
+    .tf__banner::after {
+        width: 125px;
+        height: 75px;
+    }
+
+    .tf__banner_3 .tf__banner_text::before,
+    .tf__banner::before {
+        right: 40%;
+        width: 85px;
+        height: 115px;
+    }
+
+    .tf__single_category_text {
+        padding-left: 70px;
+    }
+
+    .tf__banner_text h1,
+    .tf__banner_text h1 span {
+        font-size: 60px;
+    }
+
+    .tf__banner_text p {
+        max-width: 80%;
+    }
+
+    .tf__heading_area h2 {
+        font-size: 30px;
+    }
+
+    .tf__about_top_text_center {
+        max-width: 65%;
+        padding-right: 25px;
+    }
+
+    .tf__about_text p {
+        max-width: 100%;
+    }
+
+    .tf__about_img {
+        height: 480px;
+    }
+
+    .tf__about::before {
+        bottom: 20px;
+        left: 35%;
+        width: 40px;
+        height: 75px;
+    }
+
+    .tf__faq_img {
+        width: 450px;
+        height: 450px;
+        left: 0;
+    }
+
+    .tf__faq_img::after {
+        top: -55px;
+    }
+
+    .tf__faq::after {
+        top: -50px;
+    }
+
+    .tf__faq::before {
+        right: 85%;
+    }
+
+    .tf__faq_page::after {
+        top: 150px;
+    }
+
+    .tf__faq_page::before {
+        right: 90%;
+    }
+
+    .tf__activities_text p {
+        max-width: 100%;
+    }
+
+    .tf__activities_item span {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 30px;
+    }
+
+    .tf__work_single_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .tf__work_single_text {
+        padding: 163px 30px 0px 30px;
+    }
+
+    .tf__single_testimonial {
+        border-radius: 40px;
+    }
+
+
+    .tf__activities_item h3 {
+        font-size: 18px;
+    }
+
+    .tf__activities_img {
+        width: auto;
+        height: 100%;
+        margin-left: 0;
+    }
+
+    .tf__footer_content h3 {
+        margin-bottom: 25px;
+    }
+
+    .tf__footer_content.xs_mt_50 {
+        margin-bottom: 50px;
+    }
+
+    .tf__scroll_btn {
+        right: -25px;
+    }
+
+    .tf__about::after {
+        top: 200px;
+    }
+
+    /*==================================
+        HOME PAGE END
+    ==================================*/
+
+    /*==================================
+        ABOUT PAGE START
+    ==================================*/
+    .tf__breadcrumb_text h2 {
+        font-size: 55px;
+    }
+
+    .tf__breadcrumb {
+        padding-top: 195px;
+        padding-bottom: 130px;
+    }
+
+    .tf__breadcrumb .container::after {
+        width: 350px;
+        height: 360px;
+        top: -28px;
+    }
+
+    .tf__about_2_img .tf__about_large {
+        width: 430px;
+        height: 430px;
+    }
+
+    .tf__about_2_img p {
+        bottom: -70px;
+        left: 40px;
+    }
+
+    .tf__about_2_text ul {
+        max-width: 100%;
+    }
+
+    .tf__about_2_text ul li .text {
+        width: 83%;
+    }
+
+    .tf__about_us_counter {
+        margin-top: -15px;
+    }
+
+    .tf__about_2_img .tf__about_large::after {
+        top: -50px;
+    }
+
+    /*==================================
+        ABOUT PAGE END
+    ==================================*/
+
+    /*==================================
+        BLOG DETAILS START
+    ==================================*/
+    .tf__blog_details_img,
+    .tf__courses_details_img,
+    .tf__blog_details_center_img {
+        height: 350px;
+    }
+
+    .tf__single_comment_text {
+        max-width: 82%;
+    }
+
+    .tf__single_comment.reply .tf__single_comment_text {
+        max-width: 79%;
+    }
+
+    .tf__comment_reply {
+        padding: 30px;
+    }
+
+    .tf__sidebar_certificate {
+        padding: 21px;
+    }
+
+    .sidebar_item {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .tf__sidebar_blog.sidebar_item {
+        padding-bottom: 0;
+    }
+
+    .tf__sidebar_blog ul li .text {
+        max-width: 58%;
+    }
+
+    .tf__sidebar_tags {
+        padding-bottom: 0px;
+    }
+
+    .tf__sidebar_apply {
+        height: 340px;
+    }
+
+    .tf__sidebar_apply a {
+        padding: 15px 30px;
+    }
+
+    .tf__blog_page {
+        margin-top: 190px !important;
+    }
+
+    /*==================================
+        BLOG DETAILS END
+    ==================================*/
+
+    /*==================================
+        CONTACT START
+    ==================================*/
+    .tf__contact_single .text {
+        max-width: 73%;
+    }
+
+    .tf__contact_form p {
+        width: 100%;
+    }
+
+    /*==================================
+        CONTACT END
+    ==================================*/
+
+    /*==================================
+        COURSE DETAILS START
+    ==================================*/
+    .tf__courses_details_header .text {
+        width: 89.7%;
+    }
+
+    .tf__course_overview ul li,
+    .tf__course_overview ol li {
+        width: 100%;
+    }
+
+    .tf__course_instructor_img {
+        height: 300px;
+    }
+
+    .tf__courses_details_header .text li a {
+        padding: 10px 19px !important;
+        font-size: 14px !important;
+    }
+
+    /*==================================
+        COURSE DETAILS END
+    ==================================*/
+
+    /*==================================
+        EVENT DETAILS START
+    ==================================*/
+    .tf__event_details_img,
+    .tf__event_det_center_img {
+        height: 450px;
+    }
+
+    .tf__event_details_text {
+        margin-right: 0;
+    }
+
+    .tf__event_det_center_text {
+        max-width: 100%;
+    }
+
+    .tf__single_services {
+        padding: 60px 30px 30px 30px;
+    }
+
+    /*==================================
+        EVENT DETAILS END
+    ==================================*/
+
+    /*==================================
+        TEAM DETAILS START
+    ==================================*/
+    .tf__team_details_img,
+    .tf__single_team_img {
+        height: 440px;
+    }
+
+    .tf__team_details_text p {
+        padding: 20px;
+    }
+
+    .tf__counter_area ul li.tf__single_counter {
+        width: 50%;
+        border-right: 0;
+    }
+
+    .tf__counter_area {
+        padding: 25px 0px;
+    }
+
+    .tf__team_page::before {
+        width: 75px;
+        height: 103px;
+    }
+
+    .tf__team_page::after {
+        display: none;
+    }
+
+    /*==================================
+        TEAM DETAILS END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 2 START
+    ==================================*/
+    .tf__header_text a {
+        max-width: 170px;
+        height: 65px;
+    }
+
+    .tf__topbar_right .tf__other_language {
+        left: auto;
+        right: 0;
+    }
+
+    .tf__header_text ul li .icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin-right: 10px;
+    }
+
+    .tf__header_text ul li .text h4 {
+        font-size: 16px;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item {
+        margin-left: 30px;
+    }
+
+    .tf__header {
+        height: 65px;
+    }
+
+    .tf__team_3::before,
+    .tf__team_2::before {
+        top: 0;
+    }
+
+    .tf__team_2::after {
+        top: 95%;
+    }
+
+    .tf__single_blog_2_img {
+        height: 250px;
+    }
+
+    .tf__single_blog_text_2 {
+        padding: 10px 10px 10px 20px;
+    }
+
+    .tf__blog_2 .tf__single_blog_img {
+        height: 290px;
+    }
+
+    .tf__single_blog_text {
+        padding: 15px 15px 15px 15px;
+    }
+
+    .tf__footer_apply p {
+        width: 40%;
+    }
+
+    .tf__footer_logo_area ul li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .tf__skills_bar_single {
+        width: 100%;
+    }
+
+    .tf__scroll_btn_2 {
+        right: 20px !important;
+        bottom: 80px !important;
+    }
+
+    @keyframes banner_animi_1 {
+        from {
+            top: 120px;
+        }
+
+        to {
+            top: 150px;
+        }
+    }
+
+    .tf__testimonial_2 .tf__single_counter h4 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /*==================================
+        HOME PAGE 2 END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 3 START
+    ==================================*/
+    .tf__banner_3 .tf__banner_text::before {
+        right: 40%;
+        width: 85px;
+        height: 80px;
+    }
+
+    .tf__study_contact_text {
+        padding: 160px 0px 30px 0px;
+    }
+
+    .tf__study_contact_text .text {
+        width: 50%;
+        padding-right: 0;
+    }
+
+    .tf__counter_3 .tf__counter_area ul li.tf__single_counter {
+        width: 25%;
+        text-align: left;
+    }
+
+    .tf__single_counter h4 {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .tf__counter_3_area::before {
+        top: -175px;
+        right: 190px;
+        width: 120px;
+        height: 115px;
+    }
+
+    .tf__team_3::before {
+        top: 300px;
+        width: 80px;
+        height: 110px;
+    }
+
+    .tf__contact_3_area {
+        padding: 30px;
+    }
+
+    .tf__contact_3_text h2,
+    .tf__contact_3_text h2 span {
+        font-size: 35px;
+    }
+
+    /*==================================
+        HOME PAGE 3 END
+    ==================================*/
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+
+    /*==================================
+        HOME PAGE START
+    ==================================*/
+    /* menu start */
+    .main_menu {
+        height: 70px;
+        background: var(--colorWhite);
+    }
+
+    .main_menu .container {
+        padding: 14px 0;
+    }
+
+    .main_menu .navbar-nav {
+        line-height: 55px;
+        background: var(--colorWhite);
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin-top: 11px;
+        padding-top: 5px;
+    }
+
+    .main_menu .navbar-nav .nav-item .common_btn {
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+    .main_menu .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link::after,
+    .main_menu .navbar-nav .nav-item .nav-link::after {
+        bottom: 14px;
+    }
+
+    .tf__droap_menu {
+        max-height: 250px;
+        left: 50%;
+        transform: scaleY(.8) translateX(-50%);
+        -webkit-transform: scaleY(.8) translateX(-50%);
+        -moz-transform: scaleY(.8) translateX(-50%);
+        -ms-transform: scaleY(.8) translateX(-50%);
+        -o-transform: scaleY(.8) translateX(-50%);
+    }
+
+    .main_menu_2 .navbar-nav .nav-item:hover .tf__droap_menu,
+    .main_menu .navbar-nav .nav-item:hover .tf__droap_menu {
+        transform: scaleY(1) translateX(-50%);
+        -webkit-transform: scaleY(1) translateX(-50%);
+        -moz-transform: scaleY(1) translateX(-50%);
+        -ms-transform: scaleY(1) translateX(-50%);
+        -o-transform: scaleY(1) translateX(-50%);
+    }
+
+    .common_btn,
+    .common_btn_2,
+    .common_btn_3 {
+        font-size: 14px !important;
+    }
+
+    .navbar-brand {
+        max-width: 140px !important;
+        margin-left: 15px !important;
+    }
+
+    .navbar-toggler {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        padding: 0;
+        border: none;
+        border-radius: 3px !important;
+        background: var(--colorBlack);
+        color: var(--colorWhite);
+        margin-right: 15px;
+    }
+
+    .navbar-toggler .close_icon {
+        display: none;
+    }
+
+    .navbar-toggler.show_close_icon .menu_icon {
+        display: none;
+    }
+
+    .navbar-toggler.show_close_icon .close_icon {
+        display: block;
+    }
+
+    /* menu end */
+
+    /* banner start */
+    .tf__banner_text p {
+        font-size: 16px;
+    }
+
+    .tf__banner_text ul li .play_btn {
+        margin-left: 30px;
+    }
+
+    .tf__banner::after,
+    .tf__banner::before {
+        display: none;
+    }
+
+    /* banner end */
+
+    /* categories start */
+    .tf__heading_area h2 {
+        font-size: 30px;
+    }
+
+    .tf__single_category_text {
+        padding: 25px;
+        margin-left: 38px;
+        padding-left: 50px;
+    }
+
+    .tf__single_category_icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    /* categories end */
+
+    /* about start */
+    .tf__about {
+        margin-top: 195px !important;
+    }
+
+    .tf__about_top_img {
+        height: 350px;
+    }
+
+    .tf__about_top::after {
+        top: -205px;
+        left: -22px;
+        transform: rotate(55deg);
+        -webkit-transform: rotate(55deg);
+        -moz-transform: rotate(55deg);
+        -ms-transform: rotate(55deg);
+        -o-transform: rotate(55deg);
+    }
+
+    .tf__about_top_text_center {
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    .tf__about_top_text_center p {
+        margin-bottom: 20px;
+    }
+
+    .tf__banner_3 .tf__banner_text::after,
+    .tf__faq::after,
+    .tf__about::after {
+        display: none;
+    }
+
+    .tf__faq::before,
+    .tf__about::before {
+        display: none;
+    }
+
+    .tf__about_top {
+        top: -95px;
+        padding: 20px;
+    }
+
+    .tf__about_img {
+        height: 540px;
+        margin-top: 25px;
+    }
+
+    .tf__about_text p {
+        max-width: 100%;
+    }
+
+    /* about end */
+
+    /* event start */
+    .tf__about_img .text {
+        bottom: 0;
+        right: 20px;
+    }
+
+    .tf__single_event_text ul li {
+        margin-bottom: 10px;
+    }
+
+    .tf__single_event_text .title {
+        margin-top: 5px;
+    }
+
+    .tf__single_event_text {
+        padding: 15px 20px 20px 20px;
+    }
+
+    /* event end */
+
+    /* education faq start */
+    .tf__faq_img {
+        width: 550px;
+        height: 550px;
+        left: 0;
+    }
+
+    .tf__faq_img::after {
+        top: -120px;
+        left: 0;
+    }
+
+    .tf__faq::after {
+        display: none;
+    }
+
+    .tf__faq_text {
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .tf__faq_accordion .accordion-body {
+        padding: 20px;
+    }
+
+    /* education faq end */
+
+    /* worl start */
+    .work_slider .tf__work_single_text {
+        padding-bottom: 53px !important;
+        margin-top: 185px;
+        padding: 163px 30px 0px 30px;
+    }
+
+    .tf__work .md_margin {
+        margin-bottom: -15px !important;
+    }
+
+    /* worl end */
+
+    /* testimonial start */
+    .tf__single_testimonial {
+        padding: 40px 20px;
+    }
+
+    /* testimonial end */
+
+    /* activities start */
+    .tf__activities {
+        margin-top: 95px !important;
+    }
+
+    .tf__activities_img {
+        width: auto;
+        height: 460px;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+    .tf__activities_item span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    .tf__activities_item h3 {
+        font-size: 18px;
+    }
+
+    .tf__activities .md_margin {
+        margin-top: 0 !important;
+    }
+
+    /* activities end */
+
+    /* video start */
+    .tf__video_text h4 {
+        font-size: 30px;
+    }
+
+    /* video end */
+
+    /* blog start */
+    .tf__single_blog_img {
+        height: 240px;
+    }
+
+    .tf__single_blog_text {
+        padding: 25px 15px 15px 15px;
+    }
+
+    /* blog end*/
+
+    /* footer start */
+    .tf__footer_logo_area .footer_logo {
+        max-width: 160px;
+    }
+
+    .tf__footer_content h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .tf__footer_logo_area {
+        margin-bottom: 50px;
+    }
+
+    /* footer end */
+
+    /* scroll button start */
+    .tf__scroll_btn {
+        right: -15px;
+    }
+
+    /* scroll button end */
+    /*==================================
+        HOME PAGE END
+    ==================================*/
+
+    /*==================================
+        ABOUT PAGE START
+    ==================================*/
+    .tf__breadcrumb_text h2 {
+        font-size: 45px;
+    }
+
+    .tf__breadcrumb {
+        padding-top: 145px;
+        padding-bottom: 80px;
+    }
+
+    .tf__breadcrumb .container::after {
+        width: 280px;
+        height: 290px;
+        top: -20px;
+    }
+
+    .tf__about_2_img .tf__about_large {
+        width: 500px;
+        height: 500px;
+    }
+
+    .tf__about_2_text {
+        margin-top: 90px;
+    }
+
+    .tf__about_2_img p {
+        border-radius: 70px;
+        bottom: -70px;
+        left: 65px;
+    }
+
+    .tf__about_2_text ul {
+        max-width: 100%;
+    }
+
+    .tf__about_2_text ul li .text {
+        width: 88%;
+    }
+
+    .tf__about_us_counter {
+        justify-content: center;
+    }
+
+    .tf__about_us_counter a {
+        margin-top: 15px;
+    }
+
+    .tf__about_2_img .tf__about_large::after {
+        right: 190px;
+    }
+
+    /*==================================
+        ABOUT PAGE END
+    ==================================*/
+
+    /*==================================
+        BLOG DETAILS START
+    ==================================*/
+    .tf__blog_details_img,
+    .tf__courses_details_img,
+    .tf__blog_details_center_img {
+        height: 350px;
+    }
+
+    .tf__single_comment_text {
+        max-width: 84%;
+    }
+
+    .tf__single_comment.reply .tf__single_comment_text {
+        max-width: 82%;
+    }
+
+    .tf__comment_reply {
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+
+    .tf__sidebar_certificate {
+        padding: 40px;
+    }
+
+    .tf__sidebar_blog ul li .text {
+        max-width: 70%;
+    }
+
+    .tf__sidebar_tags {
+        padding-bottom: 10px;
+    }
+
+    .tf__sidebar_apply {
+        height: 725px;
+    }
+
+    /*==================================
+        BLOG DETAILS END
+    ==================================*/
+
+    /*==================================
+        CONTACT START
+    ==================================*/
+    .tf__contact_text {
+        margin-top: 25px;
+    }
+
+    .tf__contact_single .text {
+        max-width: 77%;
+    }
+
+    .tf__contact_form p {
+        width: 75%;
+    }
+
+    .tf__contact_map {
+        height: 400px;
+    }
+
+    /*==================================
+        CONTACT END
+    ==================================*/
+
+    /*==================================
+        COURSE DETAILS START
+    ==================================*/
+    .tf__course_overview ul li,
+    .tf__course_overview ol li {
+        width: 100%;
+    }
+
+    .tf__courses_details_area {
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_img {
+        height: 400px;
+    }
+
+    .tf__courses_details_header .text {
+        width: 90.9%;
+    }
+
+    /*==================================
+        COURSE DETAILS END
+    ==================================*/
+
+    /*==================================
+        EVENT DETAILS START
+    ==================================*/
+    .tf__event_details_img,
+    .tf__event_det_center_img {
+        height: 350px;
+    }
+
+    .tf__event_details_text {
+        margin-right: 0;
+    }
+
+    .tf__event_det_center_text {
+        max-width: 100%;
+    }
+
+    /*==================================
+        EVENT DETAILS END
+    ==================================*/
+
+    /*==================================
+        SERVICES START
+    ==================================*/
+    .tf__single_services {
+        padding: 35px;
+    }
+
+    .tf__single_services h3 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /*==================================
+        SERVICES END
+    ==================================*/
+
+    /*==================================
+        TEAM DETAILS START
+    ==================================*/
+    .tf__team_details_img,
+    .tf__single_team_img {
+        height: 330px;
+    }
+
+    .tf__team_details_text h3 {
+        margin-top: 25px;
+    }
+
+    .tf__team_details_text p {
+        padding: 20px;
+    }
+
+    .tf__team_description ul li {
+        width: 100%;
+    }
+
+    .tf__counter_area ul li.tf__single_counter {
+        width: 50%;
+        border-right: 0;
+    }
+
+    .tf__counter_area {
+        padding: 25px 0px;
+    }
+
+    .tf__team_page::before {
+        width: 85px;
+        height: 115px;
+    }
+
+    .tf__team_page::after {
+        display: none;
+    }
+
+    /*==================================
+        TEAM DETAILS END
+    ==================================*/
+
+    /*==================================
+        TEAM HOME PAGE 2 START
+    ==================================*/
+    .tf__topbar_right .tf__other_language {
+        left: auto;
+        right: 0;
+    }
+
+    .main_menu_2 .navbar-brand {
+        width: 120px;
+        height: 40px;
+        display: block;
+        margin: 0 !important;
+    }
+
+    .main_menu_2 .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .main_menu_2 .main_menu_2_area {
+        height: auto;
+        text-align: center;
+    }
+
+    .tf__topbar {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .main_menu_2 {
+        background: var(--colorWhite);
+        padding: 10px 0px;
+        position: fixed;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link {
+        text-align: center;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link::after {
+        display: none;
+    }
+
+    .main_menu_2 .navbar-nav {
+        line-height: 55px;
+        background: var(--colorWhite);
+        border-top: 1px solid #ddd;
+        margin-top: 11px;
+        padding-top: 5px;
+    }
+
+    .main_menu_2 .common_btn_2 {
+        margin-bottom: 15px;
+    }
+
+    .tf__banner_text {
+        padding-top: 65px;
+        padding-bottom: 0;
+    }
+
+    .tf__home_2_about_img {
+        margin-right: 0;
+    }
+
+    .tf__home_2_about_text p {
+        width: 80%;
+        margin-bottom: 35px;
+    }
+
+    .tf__upcoming_event::after {
+        display: none;
+    }
+
+    .tf__counter2_overlay {
+        padding: 25px 0px;
+    }
+
+    .tf__team_2::after,
+    .tf__team_2::before {
+        display: none;
+    }
+
+    .tf__single_blog_2_img {
+        width: 100%;
+        height: 240px !important;
+    }
+
+    .tf__blog_2 .tf__single_blog_img,
+    .tf__single_blog_2_img {
+        height: 400px;
+    }
+
+    .tf__single_blog_text_2 {
+        width: 100%;
+        padding: 25px 20px 15px 15px;
+    }
+
+    .tf__footer_apply p {
+        width: 60%;
+    }
+
+    .tf__footer_apply .tf__footer_apply_overlay {
+        padding: 90px 40px 42px 40px;
+    }
+
+    .tf__footer_2 .tf__footer_content,
+    .tf__footer_2 .tf__footer_logo_area {
+        margin-bottom: 50px;
+    }
+
+    .tf__footer_2 .tf__copyright {
+        margin-top: -15px;
+        padding-bottom: 0;
+    }
+
+    .tf__scroll_btn_2 {
+        right: 10px !important;
+        bottom: 10px !important;
+    }
+
+    .tf__home_2_about_text {
+        margin-top: 25px;
+    }
+
+    .tf__banner_2 {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .tf__banner_2 .tf__banner_text {
+        padding-top: 158px;
+        padding-bottom: 203px;
+    }
+
+    /*==================================
+        HOME PAGE 2 END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 3 START
+    ==================================*/
+    .main_menu_3 {
+        position: fixed;
+        top: 50px;
+    }
+
+    .main_menu_3 .navbar-nav {
+        margin-top: 13px;
+    }
+
+    .home_3 .tf__banner_text {
+        margin-top: 145px;
+        margin-bottom: 260px;
+    }
+
+    .tf__banner_3 .tf__banner_text::before {
+        display: none;
+    }
+
+    .tf__study_contact_text {
+        padding: 110px 0px 30px 0px;
+    }
+
+    .tf__study_contact_text .text {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .tf__counter_3_area {
+        padding: 40px 40px 15px 40px;
+    }
+
+    .home_3 .tf__counter_3_area::before {
+        display: none;
+    }
+
+    .tf__counter_3_area::after {
+        display: none;
+    }
+
+    .tf__counter_3 .tf__counter2_overlay {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .tf__team_3::before {
+        display: none;
+    }
+
+    .tf__contact_3_area {
+        padding: 50px;
+        background-position: center left !important;
+    }
+
+    .tf__contact_3_text h2,
+    .tf__contact_3_text h2 span {
+        font-size: 34px;
+        color: var(--colorWhite);
+    }
+
+    .tf__contact_3_text {
+        margin-bottom: 25px;
+    }
+
+    .home_3 .tf__counter_3 {
+        margin-top: -140px;
+    }
+
+    .tf__contact_3_text p {
+        width: 100%;
+    }
+
+    .tf__footer_3 .tf__footer_content,
+    .tf__footer_3 .tf__footer_logo_area {
+        margin-bottom: 50px;
+    }
+
+    .tf__counter_3 p {
+        width: 70%;
+    }
+
+    .tf__single_counter h4 {
+        font-size: 18px;
+    }
+
+    .tf__footer_3 .tf__copyright {
+        padding-bottom: 0;
+        margin-top: -15px;
+    }
+
+    /*==================================
+        HOME PAGE 3 END
+    ==================================*/
+
+    .tf__pricacy_policy {
+        margin-bottom: -25px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+
+    /*==================================
+        HOME PAGE START
+    ==================================*/
+    /* menu start */
+    .main_menu {
+        height: 70px;
+        background: var(--colorWhite);
+    }
+
+    .main_menu .container {
+        padding: 14px 0;
+    }
+
+    .main_menu .navbar-nav {
+        line-height: 55px;
+        background: var(--colorWhite);
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin-top: 11px;
+        padding-top: 5px;
+    }
+
+    .main_menu .navbar-nav .nav-item .common_btn {
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+    .main_menu .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link::after,
+    .main_menu .navbar-nav .nav-item .nav-link::after {
+        bottom: 14px;
+    }
+
+    .tf__droap_menu {
+        max-height: 250px;
+        left: 50%;
+        transform: scaleY(.8) translateX(-50%);
+        -webkit-transform: scaleY(.8) translateX(-50%);
+        -moz-transform: scaleY(.8) translateX(-50%);
+        -ms-transform: scaleY(.8) translateX(-50%);
+        -o-transform: scaleY(.8) translateX(-50%);
+    }
+
+    .main_menu_2 .navbar-nav .nav-item:hover .tf__droap_menu,
+    .main_menu .navbar-nav .nav-item:hover .tf__droap_menu {
+        transform: scaleY(1) translateX(-50%);
+        -webkit-transform: scaleY(1) translateX(-50%);
+        -moz-transform: scaleY(1) translateX(-50%);
+        -ms-transform: scaleY(1) translateX(-50%);
+        -o-transform: scaleY(1) translateX(-50%);
+    }
+
+    .common_btn,
+    .common_btn_2,
+    .common_btn_3 {
+        font-size: 14px !important;
+    }
+
+    .navbar-brand {
+        max-width: 140px !important;
+        /* height: 45px !important; */
+        margin-left: 15px !important;
+    }
+
+    .navbar-toggler {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        padding: 0;
+        border: none;
+        border-radius: 3px !important;
+        background: var(--colorBlack);
+        color: var(--colorWhite);
+        margin-right: 15px;
+    }
+
+    .navbar-toggler .close_icon {
+        display: none;
+    }
+
+    .navbar-toggler.show_close_icon .menu_icon {
+        display: none;
+    }
+
+    .navbar-toggler.show_close_icon .close_icon {
+        display: block;
+    }
+
+    /* menu end */
+
+    /* banner start */
+    .tf__banner_text h1,
+    .tf__banner_text h1 span {
+        font-size: 50px;
+    }
+
+    .tf__banner_text p {
+        font-size: 16px;
+        max-width: 85%;
+    }
+
+    .tf__banner {
+        height: auto;
+        padding: 170px 0px 100px 0px;
+        background-position: center left !important;
+    }
+
+    .tf__banner_text ul li .play_btn {
+        margin-left: 30px;
+    }
+
+    .tf__banner::after,
+    .tf__banner::before {
+        display: none;
+    }
+
+    /* banner end */
+
+    /* categories start */
+    .tf__heading_area h2 {
+        font-size: 30px;
+    }
+
+    /* categories end */
+
+    /* about start */
+    .tf__about_top_img {
+        height: 270px;
+    }
+
+    .tf__about_top::after {
+        top: -210px;
+        left: -70px;
+        transform: rotate(55deg);
+        -webkit-transform: rotate(55deg);
+        -moz-transform: rotate(55deg);
+        -ms-transform: rotate(55deg);
+        -o-transform: rotate(55deg);
+    }
+
+    .tf__about_top_text_center {
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    .tf__about_top_text_center p {
+        margin-bottom: 20px;
+    }
+
+    .tf__banner_3 .tf__banner_text::after,
+    .tf__faq::after,
+    .tf__about::after {
+        display: none;
+    }
+
+    .tf__faq::before,
+    .tf__about::before {
+        display: none;
+    }
+
+    .tf__about_top {
+        top: -95px;
+        padding: 20px;
+    }
+
+    .tf__about_img {
+        height: 400px;
+        margin-top: 25px;
+    }
+
+    .tf__about_text p {
+        max-width: 90%;
+    }
+
+    /* about end */
+
+    /* event start */
+    .tf__about_img .text {
+        bottom: 0;
+        right: 20px;
+    }
+
+    /* event end */
+
+    /* education faq start */
+    .tf__faq_img {
+        width: 450px;
+        height: 450px;
+        left: 0;
+    }
+
+    .tf__faq_img::after {
+        top: -120px;
+        left: 0;
+    }
+
+    .tf__faq::after {
+        display: none;
+    }
+
+    .tf__faq_text {
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .tf__faq_text .description {
+        max-width: 80%;
+    }
+
+    .tf__faq_accordion .accordion-body {
+        padding: 20px;
+    }
+
+    /* education faq end */
+
+    /* testimonial start */
+    .tf__single_testimonial {
+        padding: 40px;
+    }
+
+    /* testimonial end */
+
+    /* activities start */
+    .tf__activities_text p {
+        max-width: 80%;
+    }
+
+    .tf__activities_img {
+        width: auto;
+        height: auto;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+    .tf__activities_item span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    .tf__activities_item h3 {
+        font-size: 16px;
+    }
+
+    .tf__activities_item {
+        padding: 25px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .tf__activities_slider_area .tf__activities_item::after {
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+
+    /* activities end */
+
+    /* video start */
+    .tf__video_text h4 {
+        font-size: 30px;
+    }
+
+    /* video end */
+
+    /* blog start */
+    .tf__single_blog_img {
+        height: 270px;
+    }
+
+    /* blog end*/
+
+    /* footer start */
+    .tf__footer_logo_area .footer_logo {
+        max-width: 160px;
+    }
+
+    .tf__footer_content h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .tf__copyright ul li a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    /* footer end */
+
+    /* scroll button start */
+    .tf__scroll_btn {
+        right: -15px;
+    }
+
+    /* scroll button end */
+    /*==================================
+        HOME PAGE END
+    ==================================*/
+
+    /*==================================
+        ABOUT PAGE START
+    ==================================*/
+    .tf__breadcrumb_text h2 {
+        font-size: 35px;
+    }
+
+    .tf__breadcrumb {
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
+
+    .tf__breadcrumb .container::after {
+        width: 180px;
+        height: 185px;
+        top: -20px;
+    }
+
+    .tf__about_2_img .tf__about_large {
+        width: 400px;
+        height: 400px;
+    }
+
+    .tf__about_2_img .tf__about_small {
+        width: 130px;
+        height: 130px;
+        border: 7px solid var(--colorWhite);
+    }
+
+    .tf__about_2_text {
+        margin-top: 90px;
+    }
+
+    .tf__about_2_img p {
+        border-radius: 70px;
+        bottom: -70px;
+        left: 25px;
+    }
+
+    .tf__about_2_text p {
+        max-width: 100%;
+    }
+
+    .tf__about_2_text ul {
+        max-width: 100%;
+    }
+
+    .tf__about_2_text ul li .text {
+        width: 85%;
+    }
+
+    .tf__about_us_counter p span {
+        font-size: 20px;
+        min-width: 135px;
+    }
+
+    .tf__about_us_counter p {
+        font-size: 15px;
+    }
+
+    .tf__about_us_counter {
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .tf__about_us_counter a {
+        margin-top: 15px;
+    }
+
+    .tf__about_us_counter p span::after {
+        font-size: 25px;
+        right: 35px;
+    }
+
+    .tf__popular_service_single {
+        padding: 30px 20px;
+    }
+
+    /*==================================
+        ABOUT PAGE END
+    ==================================*/
+
+    /*==================================
+        BLOG DETAILS START
+    ==================================*/
+    .tf__blog_details_img,
+    .tf__courses_details_img,
+    .tf__blog_details_center_img {
+        height: 280px;
+    }
+
+    .tf__details_quot_text {
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .tf__details_quot_text::after {
+        bottom: 15px;
+        right: 25px;
+        font-size: 40px;
+    }
+
+    .tf__single_comment_text {
+        max-width: 78%;
+    }
+
+    .tf__single_comment.reply .tf__single_comment_text {
+        max-width: 78%;
+    }
+
+    .tf__single_comment.reply {
+        margin-left: 0;
+    }
+
+    .tf__comment_reply {
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+
+    .tf__sidebar_certificate {
+        padding: 40px;
+    }
+
+    .tf__sidebar_blog ul li .text {
+        max-width: 76%;
+    }
+
+    .tf__sidebar_tags {
+        padding-bottom: 10px;
+    }
+
+    .tf__sidebar_apply {
+        height: 541px;
+    }
+
+    .tf__sidebar_apply a {
+        padding: 12px 30px;
+    }
+
+    /*==================================
+        BLOG DETAILS END
+    ==================================*/
+
+    /*==================================
+        CONTACT START
+    ==================================*/
+    .tf__contact_text {
+        margin-top: 25px;
+    }
+
+    .tf__contact_single .text {
+        max-width: 77%;
+    }
+
+    .tf__contact_form p {
+        width: 100%;
+    }
+
+    .tf__contact_map {
+        height: 350px;
+    }
+
+    /*==================================
+        CONTACT END
+    ==================================*/
+
+    /*==================================
+        COURSE DETAILS START
+    ==================================*/
+    .tf__courses_details_header .img {
+        margin-bottom: 10px;
+    }
+
+    .tf__courses_details_header .text li {
+        width: 20%;
+        text-align: left;
+        border: none;
+    }
+
+    .tf__courses_details_header .text li h4 {
+        font-size: 15px;
+    }
+
+    .tf__courses_details_header .text li p {
+        font-size: 12px;
+    }
+
+    .tf__courses_det_text .nav li {
+        width: 33.33%;
+    }
+
+    .tf__courses_det_text .nav li button {
+        width: 100%;
+    }
+
+    .tf__course_overview ul li,
+    .tf__course_overview ol li {
+        width: 100%;
+    }
+
+    .tf__courses_details_area {
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_img {
+        height: 500px;
+    }
+
+    .tf__courses_details_header .text {
+        width: 100%;
+    }
+
+    .tf__courses_details_header .text li a {
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+    }
+
+    /*==================================
+        COURSE DETAILS END
+    ==================================*/
+
+    /*==================================
+        ERROR PAGE START
+    ==================================*/
+    .tf__error_text .img {
+        width: 280px;
+        height: 300px;
+    }
+
+    /*==================================
+        ERROR PAGE END
+    ==================================*/
+
+    /*==================================
+        EVENT DETAILS START
+    ==================================*/
+    .tf__event_details_img,
+    .tf__event_det_center_img {
+        height: 280px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .tf__event_details_text {
+        margin-right: 0;
+    }
+
+    .tf__event_det_center_text {
+        max-width: 100%;
+    }
+
+    /*==================================
+        EVENT DETAILS END
+    ==================================*/
+
+    /*==================================
+        TEAM DETAILS START
+    ==================================*/
+    .tf__team_details_img,
+    .tf__single_team_img {
+        height: 530px;
+    }
+
+    .tf__team_details_text h3 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .tf__team_details_text p {
+        padding: 20px;
+    }
+
+    .tf__team_description ul li {
+        width: 100%;
+    }
+
+    .tf__counter_area ul li.tf__single_counter {
+        width: 100%;
+        border-right: 0;
+    }
+
+    .tf__counter_area {
+        padding: 25px 0px;
+    }
+
+    .tf__team_page::before,
+    .tf__team_page::after {
+        display: none;
+    }
+
+    /*==================================
+        TEAM DETAILS END
+    ==================================*/
+
+    /*==================================
+        TEAM HOME PAGE 2 START
+    ==================================*/
+    .tf__topbar_right>ul {
+        justify-content: center;
+    }
+
+    .main_menu_2 .navbar-brand {
+        width: 120px;
+        height: 40px;
+        display: block;
+        margin: 0 !important;
+    }
+
+    .main_menu_2 .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .main_menu_2 .main_menu_2_area {
+        height: auto;
+        text-align: center;
+    }
+
+    .tf__topbar {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .main_menu_2 {
+        background: var(--colorWhite);
+        padding: 10px 0px;
+        position: fixed;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link {
+        text-align: center;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link::after {
+        display: none;
+    }
+
+    .main_menu_2 .navbar-nav {
+        line-height: 55px;
+        background: var(--colorWhite);
+        border-top: 1px solid #ddd;
+        margin-top: 11px;
+        padding-top: 5px;
+    }
+
+    .main_menu_2 .common_btn_2 {
+        margin-bottom: 15px;
+    }
+
+    .tf__banner_text {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .tf__home_2_about_img {
+        height: 350px;
+        margin-right: 0;
+    }
+
+    .tf__home_2_about_text p {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .tf__upcoming_event::after {
+        display: none;
+    }
+
+    .tf__counter2_overlay {
+        padding: 25px 0px;
+    }
+
+    .tf__team_2::after,
+    .tf__team_2::before {
+        display: none;
+    }
+
+    .tf__single_blog_2_img {
+        width: 100%;
+        height: 290px !important;
+    }
+
+    .tf__blog_2 .tf__single_blog_img,
+    .tf__single_blog_2_img {
+        height: 290px;
+    }
+
+    .tf__single_blog_text_2 {
+        width: 100%;
+        padding: 25px 20px 15px 15px;
+    }
+
+    .tf__footer_apply h3 {
+        font-size: 25px;
+    }
+
+    .tf__footer_apply p {
+        width: 100%;
+    }
+
+    .tf__footer_apply .tf__footer_apply_overlay {
+        padding: 90px 40px 42px 40px;
+    }
+
+    .tf__footer_2 .tf__footer_content,
+    .tf__footer_2 .tf__footer_logo_area {
+        margin-bottom: 50px;
+    }
+
+    .tf__footer_2 .tf__copyright {
+        margin-top: -15px;
+    }
+
+    .tf__scroll_btn_2 {
+        right: 10px !important;
+        bottom: 10px !important;
+    }
+
+    .tf__skills_bar_single {
+        width: 100%;
+    }
+
+    .tf__home_2_about_text {
+        margin-top: 25px;
+    }
+
+    .tf__banner_2 {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .tf__banner_2 .tf__banner_text {
+        padding-top: 158px;
+        padding-bottom: 203px;
+    }
+
+    /*==================================
+        HOME PAGE 2 END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 3 START
+    ==================================*/
+    .main_menu_3 {
+        position: fixed;
+        top: 50px;
+    }
+
+    .main_menu_3 .navbar-nav {
+        margin-top: 13px;
+    }
+
+    .home_3 .tf__banner_text {
+        margin-top: 10px;
+        margin-bottom: 57px;
+    }
+
+    .tf__banner_3 .tf__banner_text::before {
+        display: none;
+    }
+
+    .tf__study_contact_text {
+        padding: 110px 0px 30px 0px;
+    }
+
+    .tf__study_contact_text .text {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .tf__counter_3_area {
+        padding: 40px 40px 15px 40px;
+    }
+
+    .home_3 .tf__counter_3_area::before {
+        display: none;
+    }
+
+    .tf__counter_3_area::after {
+        display: none;
+    }
+
+    .tf__counter_3 .tf__counter_area ul li.tf__single_counter {
+        width: 100%;
+    }
+
+    .tf__counter_3 .tf__counter2_overlay {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .tf__team_3::before {
+        display: none;
+    }
+
+    .tf__contact_3_area {
+        padding: 48px;
+        background-position: center left !important;
+    }
+
+    .tf__contact_3_text h2,
+    .tf__contact_3_text h2 span {
+        font-size: 25px;
+        color: var(--colorWhite);
+    }
+
+    .tf__contact_3_text {
+        margin-bottom: 25px;
+    }
+
+    .home_3 .tf__counter_3 {
+        margin-top: -140px;
+    }
+
+    .tf__contact_3_text p {
+        width: 100%;
+    }
+
+    .tf__footer_3 .tf__footer_content,
+    .tf__footer_3 .tf__footer_logo_area {
+        margin-bottom: 50px;
+    }
+
+    /*==================================
+        HOME PAGE 3 END
+    ==================================*/
+
+    .tf__pricacy_policy {
+        margin-bottom: -25px;
+    }
+}
+
+@media (max-width: 575.99px) {
+
+    /*==================================
+        HOME PAGE START
+    ==================================*/
+    /* menu start */
+    .main_menu {
+        height: 70px;
+        background: var(--colorWhite);
+    }
+
+    .main_menu .container {
+        padding: 14px 0;
+    }
+
+    .main_menu .navbar-nav {
+        line-height: 55px;
+        background: var(--colorWhite);
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin-top: 11px;
+        padding-top: 5px;
+    }
+
+    .main_menu .navbar-nav .nav-item .common_btn {
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+    .main_menu .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link::after,
+    .main_menu .navbar-nav .nav-item .nav-link::after {
+        bottom: 14px;
+    }
+
+    .tf__droap_menu {
+        max-height: 250px;
+        left: 50%;
+        transform: scaleY(.8) translateX(-50%);
+        -webkit-transform: scaleY(.8) translateX(-50%);
+        -moz-transform: scaleY(.8) translateX(-50%);
+        -ms-transform: scaleY(.8) translateX(-50%);
+        -o-transform: scaleY(.8) translateX(-50%);
+    }
+
+    .main_menu_2 .navbar-nav .nav-item:hover .tf__droap_menu,
+    .main_menu .navbar-nav .nav-item:hover .tf__droap_menu {
+        transform: scaleY(1) translateX(-50%);
+        -webkit-transform: scaleY(1) translateX(-50%);
+        -moz-transform: scaleY(1) translateX(-50%);
+        -ms-transform: scaleY(1) translateX(-50%);
+        -o-transform: scaleY(1) translateX(-50%);
+    }
+
+    .common_btn,
+    .common_btn_2,
+    .common_btn_3 {
+        font-size: 14px !important;
+    }
+
+    .navbar-brand {
+        max-width: 160px !important;
+        margin-left: 15px !important;
+    }
+
+    .navbar-toggler {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        padding: 0;
+        border: none;
+        border-radius: 3px !important;
+        background: var(--colorBlack);
+        color: var(--colorWhite);
+        margin-right: 15px;
+    }
+
+    .navbar-toggler .close_icon {
+        display: none;
+    }
+
+    .navbar-toggler.show_close_icon .menu_icon {
+        display: none;
+    }
+
+    .navbar-toggler.show_close_icon .close_icon {
+        display: block;
+    }
+
+    /* menu end */
+
+    /* banner start */
+    .tf__banner_text h5 {
+        font-size: 15px;
+    }
+
+    .tf__banner_text h1,
+    .tf__banner_text h1 span {
+        font-size: 40px;
+    }
+
+    .tf__banner_text p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .tf__banner {
+        height: auto;
+        padding: 170px 0px 100px 0px;
+        background-position: center left !important;
+    }
+
+    .tf__banner_text ul li .play_btn {
+        margin-left: 30px;
+    }
+
+    .tf__banner::after,
+    .tf__banner::before {
+        display: none;
+    }
+
+    /* banner end */
+
+    /* categories start */
+    .tf__heading_area h5 {
+        font-size: 15px;
+    }
+
+    .tf__heading_area h2 {
+        font-size: 25px;
+    }
+
+    .tf__single_category_icon {
+        width: 65px;
+        height: 66px;
+        line-height: 65px;
+        font-size: 25px;
+    }
+
+    .tf__single_category_text {
+        padding: 30px;
+        margin-left: 32px;
+        padding-left: 40px;
+    }
+
+    .tf__single_category_text h3 {
+        font-size: 20px;
+    }
+
+    /* categories end */
+
+    /* about start */
+    .tf__about_top_img {
+        height: 200px;
+    }
+
+    .tf__about_top::after {
+        top: -239px;
+        left: -85px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+
+    .tf__about_top_text_center {
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    .tf__about_top_text_center p {
+        margin-bottom: 20px;
+    }
+
+    .tf__banner_3 .tf__banner_text::after,
+    .tf__faq::after,
+    .tf__about::after {
+        display: none;
+    }
+
+    .tf__faq::before,
+    .tf__about::before {
+        display: none;
+    }
+
+    .tf__about_top {
+        top: -95px;
+        padding: 20px;
+    }
+
+    .tf__about_img {
+        height: 315px;
+        margin-top: 25px;
+    }
+
+    .tf__about_text p {
+        max-width: 100%;
+    }
+
+    /* about end */
+
+    /* event start */
+    .tf__single_event_img {
+        height: 220px;
+    }
+
+    .tf__single_event_img .event_category {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+
+    .tf__single_event_text ul li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tf__single_event_text {
+        padding: 15px 20px 15px 20px;
+    }
+
+    .tf__single_event_text .title {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .tf__about_img .text {
+        bottom: 0;
+        right: 20px;
+    }
+
+    .tf__about_img .text h3 {
+        font-size: 22px;
+    }
+
+    /* event end */
+
+    /* education faq start */
+    .tf__faq_img {
+        width: 320px;
+        height: 320px;
+        left: 0;
+    }
+
+    .tf__faq_img::after {
+        top: -120px;
+        left: 0;
+    }
+
+    .tf__faq::after {
+        display: none;
+    }
+
+    .tf__faq_text {
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .tf__faq_text .description {
+        max-width: 100%;
+    }
+
+    .tf__faq_accordion .accordion-header button {
+        font-size: 15px;
+    }
+
+    .tf__faq_accordion .accordion-body {
+        padding: 20px;
+    }
+
+    /* education faq end */
+
+    /* work start */
+    .tf__work_single_text {
+        padding: 163px 30px 0px 30px;
+    }
+
+    .tf__work_single_text h3 {
+        font-size: 20px;
+    }
+
+    /* work end */
+
+    /* testimonial start */
+    .tf__single_testimonial {
+        padding: 40px 30px;
+    }
+
+    .tf__single_testimonial .title {
+        font-size: 20px;
+    }
+
+    /* testimonial end */
+
+    /* activities start */
+    .tf__activities_text p {
+        max-width: 100%;
+    }
+
+    .tf__activities_img {
+        width: auto;
+        height: auto;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+    .tf__activities_item span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    .tf__activities_item h3 {
+        font-size: 20px;
+    }
+
+    /* activities end */
+
+    /* video start */
+    .tf__video_text p {
+        max-width: 100%;
+    }
+
+    .tf__video_text h4 {
+        font-size: 25px;
+    }
+
+    /* video end */
+
+    /* blog start */
+    .tf__single_blog_text .title {
+        font-size: 20px;
+    }
+
+    .tf__single_blog_text {
+        padding: 25px 15px 15px 15px;
+    }
+
+    .tf__single_blog_img {
+        height: 220px;
+    }
+
+    /* blog end*/
+
+    /* footer start */
+    .tf__footer_logo_area .footer_logo {
+        max-width: 160px;
+    }
+
+    .tf__footer_content h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .tf__copyright p {
+        margin-bottom: 10px;
+    }
+
+    .tf__copyright ul li a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    /* footer end */
+
+    /* scroll button start */
+    .tf__scroll_btn {
+        right: -20px;
+        font-size: 13px;
+    }
+
+    /* scroll button end */
+
+    .tf__about_top_text_center h4 {
+        font-size: 20px;
+    }
+
+    .tf__single_blog_text .category {
+        padding: 5px 20px !important;
+        font-size: 14px;
+    }
+
+    /*==================================
+        HOME PAGE END
+    ==================================*/
+
+    /*==================================
+        ABOUT PAGE START
+    ==================================*/
+    .tf__breadcrumb_text h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .tf__breadcrumb {
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
+
+    .tf__breadcrumb .container::after {
+        width: 100px;
+        height: 105px;
+        top: 45px;
+    }
+
+    .tf__about_2_img .tf__about_large {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tf__about_2_img .tf__about_small {
+        width: 100px;
+        height: 100px;
+        border: 5px solid var(--colorWhite);
+    }
+
+    .tf__about_2_text {
+        margin-top: 90px;
+    }
+
+    .tf__about_2_img p {
+        border-radius: 70px;
+        bottom: -70px;
+        left: 0;
+    }
+
+    .tf__about_2_text p {
+        max-width: 100%;
+    }
+
+    .tf__about_2_text ul {
+        max-width: 100%;
+    }
+
+    .tf__about_2_text ul li .text {
+        width: 75%;
+    }
+
+    .tf__about_us_counter p span {
+        min-width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .tf__about_us_counter p {
+        text-align: center;
+    }
+
+    .tf__about_us_counter {
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .tf__about_us_counter a {
+        margin-top: 15px;
+    }
+
+    .tf__single_courses_text {
+        padding: 15px 20px 20px 20px;
+    }
+
+    .tf__single_course_header li {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .tf__single_course_header {
+        padding: 8px 20px 10px 20px;
+    }
+
+    .tf__single_courses_text .title {
+        font-size: 20px;
+    }
+
+    .tf__single_courses_img .categories {
+        padding: 5px 20px !important;
+        font-size: 14px;
+    }
+
+    .tf__popular_service_single h3 {
+        font-size: 20px;
+    }
+
+    .tf__single_courses_img {
+        height: 220px;
+    }
+
+    /*==================================
+        ABOUT PAGE END
+    ==================================*/
+
+    /*==================================
+        BLOG DETAILS START
+    ==================================*/
+    .tf__blog_details_img,
+    .tf__courses_details_img,
+    .tf__blog_details_center_img {
+        height: 220px;
+    }
+
+    .tf__blog_details_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__details_quot_text {
+        padding: 20px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .tf__details_quot_text h4 {
+        font-size: 20px;
+    }
+
+    .tf__details_quot_text::after {
+        bottom: 5px;
+        right: 20px;
+        font-size: 35px;
+    }
+
+    .tf__single_comment_text {
+        max-width: 100%;
+    }
+
+    .tf__single_comment_text span {
+        font-size: 14px;
+    }
+
+    .tf__single_comment_text span a {
+        font-size: 15px;
+    }
+
+    .tf__single_comment_img {
+        margin-bottom: 10px;
+    }
+
+    .tf__single_comment.reply {
+        margin-left: 0px;
+    }
+
+    .tf__comment_reply {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .tf__sidebar_certificate {
+        padding: 20px;
+    }
+
+    .sidebar_item {
+        padding: 20px 20px 0px 20px;
+    }
+
+    .tf__sidebar_blog.sidebar_item {
+        padding-bottom: 0;
+    }
+
+    .tf__sidebar_blog ul li .text {
+        max-width: 58%;
+    }
+
+    .tf__sidebar_blog ul li .text a {
+        font-size: 14px;
+    }
+
+    .tf__sidebar_tags {
+        padding-bottom: 0;
+    }
+
+    .tf__sidebar_apply {
+        height: 350px;
+    }
+
+    .tf__sidebar_apply a {
+        padding: 12px 30px;
+    }
+
+    .tf__blog_comment h3 {
+        font-size: 20px;
+    }
+
+    .tf__comment_reply h3 {
+        font-size: 20px;
+    }
+
+    .tf__sidebar_certificate h3 {
+        font-size: 20px;
+    }
+
+    .sidebar_item h3 {
+        font-size: 20px;
+    }
+
+    /*==================================
+        BLOG DETAILS END
+    ==================================*/
+
+    /*==================================
+        CONTACT START
+    ==================================*/
+    .tf__contact_text {
+        padding: 25px 20px 0px 20px;
+        margin-top: 25px;
+    }
+
+    .tf__contact_single .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .tf__contact_single .text {
+        max-width: 72%;
+    }
+
+    .tf__contact_single .text h3 {
+        font-size: 18px;
+    }
+
+    .tf__contact_single .text a,
+    .tf__contact_single .text p {
+        font-size: 16px;
+    }
+
+    .tf__contact_single {
+        margin-bottom: 20px;
+    }
+
+    .tf__contact_form p {
+        width: 100%;
+    }
+
+    .tf__contact_map {
+        height: 300px;
+    }
+
+    /*==================================
+        CONTACT END
+    ==================================*/
+
+    /*==================================
+        COURSE DETAILS START
+    ==================================*/
+    .tf__courses_details_header .text li {
+        width: 100%;
+        text-align: left;
+        margin-top: 15px;
+        border: none;
+    }
+
+    .tf__courses_details_header {
+        padding: 30px;
+    }
+
+    .tf__courses_det_text .nav li {
+        width: 33.33%;
+    }
+
+    .tf__courses_det_text .nav li button {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tf__course_overview ul li,
+    .tf__course_overview ol li {
+        width: 100%;
+    }
+
+    .tf__courses_details_area {
+        margin-bottom: 25px;
+    }
+
+    .tf__course_instructor_img {
+        height: 290px;
+    }
+
+    .tf__courses_review .tf__single_comment_text h4 span {
+        font-size: 12px;
+    }
+
+    .tf__courses_review .tf__comment_reply p span {
+        display: block;
+    }
+
+    .tf__courses_review .tf__comment_reply p i {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .tf__courses_details_header .text {
+        width: 100%;
+    }
+
+    /*==================================
+        COURSE DETAILS END
+    ==================================*/
+
+    /*==================================
+        ERROR PAGE START
+    ==================================*/
+    .tf__error_text .img {
+        width: 280px;
+        height: 300px;
+    }
+
+    .tf__error_text h4 {
+        font-size: 25px;
+    }
+
+    /*==================================
+        ERROR PAGE END
+    ==================================*/
+
+    /*==================================
+        EVENT DETAILS START
+    ==================================*/
+    .tf__event_details_img,
+    .tf__event_det_center_img {
+        height: 270px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .tf__event_details_text {
+        margin-right: 0;
+    }
+
+    .tf__event_details_text h2,
+    .tf__event_details_text h3 {
+        font-size: 20px;
+    }
+
+    .tf__event_details_text .location li {
+        margin-bottom: 10px;
+    }
+
+    .tf__event_det_center_text {
+        max-width: 100%;
+    }
+
+    /*==================================
+        EVENT DETAILS END
+    ==================================*/
+
+    /*==================================
+        SERVICES START
+    ==================================*/
+    .tf__single_services {
+        padding: 35px 60px;
+    }
+
+    .tf__single_services h3 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /*==================================
+        SERVICES END
+    ==================================*/
+
+    /*==================================
+        TEAM DETAILS START
+    ==================================*/
+    .tf__team_details_img,
+    .tf__single_team_img {
+        height: 300px;
+    }
+
+    .tf__team_details_text h3 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .tf__team_details_text p {
+        padding: 20px;
+    }
+
+    .tf__team_description ul li {
+        width: 100%;
+    }
+
+    .tf__counter_area ul li.tf__single_counter {
+        width: 100%;
+        border-right: 0;
+    }
+
+    .tf__counter_area {
+        padding: 25px 0px;
+    }
+
+    .tf__single_team_text .title {
+        font-size: 20px;
+    }
+
+    .tf__team_page::before,
+    .tf__team_page::after {
+        display: none;
+    }
+
+    /*==================================
+        TEAM DETAILS END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 2 START
+    ==================================*/
+    .tf__topbar_right>ul {
+        justify-content: center;
+    }
+
+    .tf__topbar_right .tf__other_language {
+        left: auto;
+        right: 0;
+    }
+
+    .main_menu_2 .navbar-brand {
+        width: 120px;
+        height: 40px;
+        display: block;
+        margin: 0 !important;
+    }
+
+    .main_menu_2 .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .main_menu_2 .main_menu_2_area {
+        height: auto;
+        text-align: center;
+    }
+
+    .tf__topbar {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .main_menu_2 {
+        background: var(--colorWhite);
+        padding: 10px 0px;
+        position: fixed;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link {
+        text-align: center;
+    }
+
+    .main_menu_2 .navbar-nav .nav-item .nav-link::after {
+        display: none;
+    }
+
+    .main_menu_2 .navbar-nav {
+        line-height: 55px;
+        background: var(--colorWhite);
+        border-top: 1px solid #ddd;
+        margin-top: 11px;
+        padding-top: 5px;
+    }
+
+    .main_menu_2 .common_btn_2 {
+        margin-bottom: 15px;
+    }
+
+    .tf__banner_text {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .tf__home_2_about_img {
+        height: 280px;
+        margin-right: 0;
+    }
+
+    .tf__home_2_about_text p {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .tf__upcoming_event::after {
+        display: none;
+    }
+
+    .tf__counter2_overlay {
+        padding: 25px 0px;
+    }
+
+    .tf__team_2::after,
+    .tf__team_2::before {
+        display: none;
+    }
+
+    .tf__single_blog_2_img {
+        width: 100%;
+    }
+
+    .tf__blog_2 .tf__single_blog_img,
+    .tf__single_blog_2_img {
+        height: 220px;
+    }
+
+    .tf__single_blog_text_2 {
+        width: 100%;
+        padding: 25px 20px 15px 15px;
+    }
+
+    .tf__footer_apply h3 {
+        font-size: 25px;
+    }
+
+    .tf__footer_apply p {
+        width: 100%;
+    }
+
+    .tf__footer_apply .tf__footer_apply_overlay {
+        padding: 90px 20px 42px 20px;
+    }
+
+    .tf__footer_2 .tf__footer_content,
+    .tf__footer_2 .tf__footer_logo_area {
+        margin-bottom: 50px;
+    }
+
+    .tf__footer_2 .tf__copyright {
+        margin-top: -15px;
+    }
+
+    .tf__scroll_btn_2 {
+        right: 10px !important;
+        bottom: 10px !important;
+    }
+
+    .tf__skills_bar_single {
+        width: 100%;
+    }
+
+    .tf__home_2_about_text {
+        margin-top: 25px;
+    }
+
+    .tf__banner_2 {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .tf__banner_2 .tf__banner_text {
+        padding-top: 158px;
+        padding-bottom: 203px;
+    }
+
+    /*==================================
+        HOME PAGE 2 END
+    ==================================*/
+
+    /*==================================
+        HOME PAGE 3 START
+    ==================================*/
+    .main_menu_3 {
+        position: fixed;
+        top: 50px;
+    }
+
+    .main_menu_3 .navbar-nav {
+        margin-top: 7px;
+    }
+
+    .home_3 .tf__banner_text {
+        margin-top: 10px;
+        margin-bottom: 57px;
+    }
+
+    .tf__banner_3 .tf__banner_text::before {
+        display: none;
+    }
+
+    .tf__study_contact_text {
+        padding: 110px 0px 30px 0px;
+    }
+
+    .tf__study_contact_text .text {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .tf__counter_3_area {
+        padding: 20px;
+    }
+
+    .home_3 .tf__counter_3_area::before {
+        display: none;
+    }
+
+    .tf__counter_3_area::after {
+        display: none;
+    }
+
+    .tf__counter_3 .tf__counter_area ul li.tf__single_counter {
+        width: 100%;
+    }
+
+    .tf__counter_3 .tf__counter2_overlay {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .tf__team_3::before {
+        display: none;
+    }
+
+    .tf__contact_3_area {
+        padding: 20px;
+        background-position: center left !important;
+    }
+
+    .tf__contact_3_text h2,
+    .tf__contact_3_text h2 span {
+        font-size: 25px;
+    }
+
+    .tf__contact_3_text {
+        margin-bottom: 25px;
+    }
+
+    .home_3 .tf__counter_3 {
+        margin-top: -140px;
+    }
+
+    .tf__contact_3_text p {
+        width: 100%;
+    }
+
+    .tf__footer_3 .tf__footer_content,
+    .tf__footer_3 .tf__footer_logo_area {
+        margin-bottom: 50px;
+    }
+
+    /*==================================
+        HOME PAGE 3 END
+    ==================================*/
+
+
+    /*==================================
+        LOGIN START
+    ==================================*/
+    .tf__login_area {
+        padding: 25px;
+    }
+
+    .tf__login_area h2 {
+        font-size: 23px;
+    }
+
+    .tf__login_area .form-check label {
+        font-size: 14px;
+    }
+
+    .tf__login_imput a {
+        font-size: 14px;
+    }
+
+    /*==================================
+        LOGIN END
+    ==================================*/
+
+    .tf__pricacy_policy {
+        margin-bottom: -25px;
+    }
+}

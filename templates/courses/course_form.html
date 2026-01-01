@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Manage Course{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>Manage Course</h2>
+                        <ul>
+                            <li><a href="{% url 'course-list' %}">Home</a></li>
+                            <li><a href="#">Create or Edit Course</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tf__contact mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 m-auto">
+                    <div class="tf__contact_form">
+                        <h3>Course Details</h3>
+                        <p>Fill in the details to publish your course on ApiLearn.</p>
+                        
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            
+                            {% if form.errors %}
+                                <div class="alert alert-danger">{{ form.errors }}</div>
+                            {% endif %}
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Course Title</label>
+                                        {{ form.title }} </div>
+                                </div>
+
+                                <div class="col-xl-6">
+                                    <div class="tf__contact_form_input">
+                                        <label>Category</label>
+                                        {{ form.category }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6">
+                                    <div class="tf__contact_form_input">
+                                        <label>Price ($)</label>
+                                        {{ form.price }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Description</label>
+                                        {{ form.description }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Course Thumbnail</label>
+                                        {{ form.image }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="form-check mt-3 mb-3">
+                                        {{ form.is_published }}
+                                        <label class="form-check-label" for="id_is_published">Publish Immediately?</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <button type="submit" class="common_btn">Save Course</button>
+                                        <a href="{% url 'course-list' %}" class="btn btn-outline-secondary ms-3">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

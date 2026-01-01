@@ -1,0 +1,47 @@
+{% extends 'dashboard/base_dashboard.html' %}
+{% block dashboard_content %}
+<div class="tf__courses_details_area">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>Add Question to: {{ quiz.title }}</h3>
+        <a href="{% url 'instructor-dashboard' %}" class="btn btn-secondary">Done / Finish</a>
+    </div>
+
+    <div class="alert alert-info">
+        Currently added: <strong>{{ quiz.questions.count }}</strong> questions.
+    </div>
+
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        
+        <div class="mb-3">
+            <label class="form-label fw-bold">Question Text</label>
+            {{ form.text }} </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Option 1</label>
+                {{ form.option_1 }}
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Option 2</label>
+                {{ form.option_2 }}
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Option 3</label>
+                {{ form.option_3 }}
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Option 4</label>
+                {{ form.option_4 }}
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold text-success">Select the Correct Answer:</label>
+            {{ form.correct_choice }}
+        </div>
+
+        <button type="submit" class="common_btn w-100">Save & Add Next Question</button>
+    </form>
+</div>
+{% endblock %}

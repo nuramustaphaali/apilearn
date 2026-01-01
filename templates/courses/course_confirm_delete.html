@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Delete Course{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>Delete Course</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tf__login mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 m-auto">
+                    <div class="tf__login_area text-center" style="border-top: 5px solid #dc3545;">
+                        <div class="mb-4">
+                            <i class="fas fa-exclamation-triangle fa-3x text-danger"></i>
+                        </div>
+                        <h3 class="text-danger">Are you sure?</h3>
+                        <p>You are about to permanently delete <strong>"{{ object.title }}"</strong>.</p>
+                        <p class="mb-4">This action cannot be undone. All lessons, quizzes, and student progress data for this course will be lost.</p>
+                        
+                        <form method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="common_btn bg-danger">Yes, Delete Permanently</button>
+                            <a href="{% url 'course-detail' object.id %}" class="btn btn-secondary mt-3">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My Inbox{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>Notifications</h2>
+                        <ul>
+                            <li><a href="{% url 'course-list' %}">Home</a></li>
+                            <li><a href="#">Inbox</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tf__courses_details mt_195 xs_mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 m-auto">
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3>My Notifications</h3>
+                        <a href="{% url 'mark-all-read' %}" class="common_btn bg-secondary" style="padding: 10px 20px; font-size: 14px;">Mark all read</a>
+                    </div>
+
+                    <div class="tf__faq_accordion">
+                        <div class="accordion">
+                            {% for note in notifications %}
+                                <div class="accordion-item mb-3 shadow-sm" style="border: 1px solid #eee; overflow: hidden;">
+                                    
+                                    <a href="{% url 'mark-read' note.id %}" class="d-block text-decoration-none" style="color: inherit;">
+                                        <div class="p-3 d-flex justify-content-between align-items-center" 
+                                             style="background-color: {% if not note.is_read %}#f0f8ff{% else %}#fff{% endif %}; border-left: 5px solid {% if not note.is_read %}#0d6efd{% else %}#ccc{% endif %};">
+                                            
+                                            <div class="d-flex align-items-center">
+                                                <div class="me-3">
+                                                    {% if not note.is_read %}
+                                                        <i class="fas fa-envelope fa-2x text-primary"></i>
+                                                    {% else %}
+                                                        <i class="far fa-envelope-open fa-2x text-muted"></i>
+                                                    {% endif %}
+                                                </div>
+
+                                                <div>
+                                                    <h6 class="mb-1" style="font-weight: {% if not note.is_read %}700{% else %}400{% endif %};">
+                                                        {{ note.message }}
+                                                        {% if not note.is_read %}
+                                                            <span class="badge bg-danger ms-2" style="font-size: 10px; vertical-align: middle;">NEW</span>
+                                                        {% endif %}
+                                                    </h6>
+                                                    <small class="text-muted"><i class="far fa-clock"></i> {{ note.created_at|timesince }} ago</small>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <i class="fas fa-chevron-right text-muted"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            {% empty %}
+                                <div class="text-center p-5 bg-light rounded">
+                                    <i class="far fa-bell-slash fa-4x text-muted mb-3"></i>
+                                    <h5>No notifications yet</h5>
+                                    <p class="text-muted">We'll let you know when something important happens.</p>
+                                    <a href="{% url 'course-list' %}" class="common_btn mt-3">Browse Courses</a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

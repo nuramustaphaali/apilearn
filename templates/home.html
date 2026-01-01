@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <section class="tf__banner" style="background: url({% static 'images/banner_bg.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="tf__banner_text wow fadeInUp" data-wow-duration="1.5s">
+                        <h5>Welcome to ApiLearn!</h5>
+                        <h1>Master Skills with <span>API-First</span> Education.</h1>
+                        <p>Join thousands of students learning via our modern, structured, and certification-ready platform.</p>
+                        <ul class="d-flex flex-wrap align-items-center">
+                            <li><a class="common_btn" href="#courses_section">Browse Courses</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tf__categories mt_95">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="tf__heading_area mb_15">
+                        <h5>OUR COURSE CATEGORIES</h5>
+                        <h2>Explore our top learning categories.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="tf__single_category light_blue">
+                        <div class="tf__single_category_icon">
+                            <i class="fal fa-code"></i>
+                        </div>
+                        <div class="tf__single_category_text">
+                            <h3>Development</h3>
+                            <p>Python, Django, React, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="tf__single_category orange">
+                        <div class="tf__single_category_icon">
+                            <i class="fal fa-laptop-code"></i>
+                        </div>
+                        <div class="tf__single_category_text">
+                            <h3>Design</h3>
+                            <p>UI/UX, Graphics, and Adobe Suite.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="tf__single_category green">
+                        <div class="tf__single_category_icon">
+                            <i class="fal fa-chart-bar"></i>
+                        </div>
+                        <div class="tf__single_category_text">
+                            <h3>Business</h3>
+                            <p>Marketing, Finance, and Strategy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tf__work pt_95" id="courses_section" style="background: url({% static 'images/work_bg.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="tf__heading_area mb_35 md_margin">
+                        <h5>AVAILABLE COURSES</h5>
+                        <h2>Start Learning Today.</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row"> 
+                {% for course in courses %}
+                <div class="col-xl-4 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-duration="1.5s">
+                    <div class="tf__work_single blue">
+                        <div class="tf__work_single_img">
+                            {% if course.image %}
+                                <img src="{{ course.image.url }}" alt="{{ course.title }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                            {% else %}
+                                <img src="{% static 'images/work_img_1.jpg' %}" alt="Default" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+                            {% endif %}
+                        </div>
+                        <div class="tf__work_single_text">
+                            <h3>{{ course.title|truncatechars:25 }}</h3>
+                            <p>{{ course.description|truncatechars:60 }}</p>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="badge bg-white text-primary fs-6">${{ course.price }}</span>
+                                {% if user == course.instructor %}
+                                    <span class="badge bg-warning text-dark">Your Course</span>
+                                {% endif %}
+                            </div>
+
+                            <a href="{% url 'course-detail' course.pk %}" class="mt-3">
+                                View Course <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12 text-center text-white">
+                    <h4>No courses found.</h4>
+                    {% if user.role == 'instructor' %}
+                        <a href="{% url 'course-create' %}" class="common_btn mt-3">Create Your First Course</a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="tf__about mt_250 xs_mt_195" style="background: url({% static 'images/about_bg.png' %});">
+        <div class="container">
+            <div class="tf__about_top wow fadeInUp" data-wow-duration="1.5s"
+                style="background: url({% static 'images/about_top_bg.jpg' %});">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="tf__about_top_img">
+                            <img src="{% static 'images/about_top_img.jpg' %}" alt="about" class="img-fluid w-100">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="tf__about_top_text">
+                            <div class="tf__about_top_text_center">
+                                <h4>Learn Flexibly</h4>
+                                <p>ApiLearn provides a reliable platform for mastering new skills. 
+                                   Whether you are a student or a professional, we have the right content for you.</p>
+                            </div>
+                            <a href="#" class="common_btn">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

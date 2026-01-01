@@ -1,0 +1,26 @@
+{% extends 'dashboard/base_dashboard.html' %}
+
+{% block dashboard_content %}
+<div class="tf__courses_details_area">
+    <h3>Edit Profile</h3>
+    <form method="post" enctype="multipart/form-data" class="mt-4">
+        {% csrf_token %}
+        
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            {{ form.full_name }} </div>
+
+        <div class="mb-3">
+            <label class="form-label">Profile Picture</label>
+            {{ form.avatar }}
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Bio / About Me</label>
+            {{ form.bio }}
+        </div>
+
+        <button type="submit" class="common_btn">Update Profile</button>
+    </form>
+</div>
+{% endblock %}

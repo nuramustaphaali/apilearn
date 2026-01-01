@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Post Announcement{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>Instructor Dashboard</h2>
+                        <ul>
+                            <li><a href="{% url 'course-list' %}">Home</a></li>
+                            <li><a href="#">Post Announcement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tf__contact mt_195 xs_mt_95 mb_100">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1.5s">
+                <div class="col-xl-8 col-lg-8 m-auto">
+                    <div class="tf__contact_form">
+                        <h3 class="mb-4">📢 Post a New Announcement</h3>
+                        <p class="mb-4">This message will be sent to all enrolled students via email and appear in their notification inbox.</p>
+                        
+                        <form method="post">
+                            {% csrf_token %}
+                            
+                            {% if form.errors %}
+                                <div class="alert alert-danger">
+                                    {{ form.errors }}
+                                </div>
+                            {% endif %}
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Announcement Title</label>
+                                        <input type="text" name="title" placeholder="e.g. Final Exam Schedule" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Message Content</label>
+                                        <textarea rows="6" name="content" placeholder="Type your announcement here..." required></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <button type="submit" class="common_btn">Broadcast Message</button>
+                                        <a href="javascript:history.back()" class="btn btn-outline-secondary ms-3" style="padding: 12px 30px; font-weight: 700; text-transform: uppercase;">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

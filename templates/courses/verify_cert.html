@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Verify Certificate{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>Verify Certificate</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tf__blog_details mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-8 m-auto">
+                    <div class="tf__sidebar_search mb-5">
+                        <h4 class="mb-3 text-center">Enter Certificate ID</h4>
+                        <form method="get" class="d-flex">
+                            <input type="text" name="id" class="form-control" placeholder="e.g. 550e8400-e29b..." value="{{ searched_id|default:'' }}" style="height: 50px;">
+                            <button type="submit" class="common_btn ms-2">Verify</button>
+                        </form>
+                    </div>
+
+                    {% if searched_id %}
+                        {% if cert %}
+                            <div class="tf__courses_details_area text-center p-4 border-success" style="border: 2px solid #28a745; border-radius: 10px; background: #f0fff4;">
+                                <div class="mb-3">
+                                    <i class="fas fa-check-circle fa-4x text-success"></i>
+                                </div>
+                                <h3 class="text-success">Valid Certificate</h3>
+                                <hr>
+                                <div class="text-start d-inline-block">
+                                    <p><strong>Student Name:</strong> {{ cert.student.full_name|default:cert.student.username }}</p>
+                                    <p><strong>Course:</strong> {{ cert.course.title }}</p>
+                                    <p><strong>Issued On:</strong> {{ cert.issued_at|date:"F d, Y" }}</p>
+                                    <p><strong>Certificate ID:</strong> {{ cert.id }}</p>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="tf__courses_details_area text-center p-4 border-danger" style="border: 2px solid #dc3545; border-radius: 10px; background: #fff0f0;">
+                                <div class="mb-3">
+                                    <i class="fas fa-times-circle fa-4x text-danger"></i>
+                                </div>
+                                <h3 class="text-danger">Invalid Certificate</h3>
+                                <p>We could not find a certificate with that ID.</p>
+                                <p>Please check the code and try again.</p>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

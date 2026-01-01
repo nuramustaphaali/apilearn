@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>sign up</h2>
+                        <ul>
+                            <li><a href="{% url 'course-list' %}">Home</a></li>
+                            <li><a href="#">sign up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tf__login mt_195 xs_mt_95 mb_100">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1.5s">
+                <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
+                    <div class="tf__login_area">
+                        <h2>Welcome to ApiLearn!</h2>
+                        <p>Create your account to start learning.</p>
+                        
+                        <form method="post">
+                            {% csrf_token %}
+                            
+                            {% if form.non_field_errors %}
+                                <div class="alert alert-danger">
+                                    {{ form.non_field_errors }}
+                                </div>
+                            {% endif %}
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <label>Full Name</label>
+                                        {{ form.full_name }} {% if form.full_name.errors %}
+                                            <small class="text-danger">{{ form.full_name.errors.0 }}</small>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <label>Email</label>
+                                        {{ form.email }}
+                                        {% if form.email.errors %}
+                                            <small class="text-danger">{{ form.email.errors.0 }}</small>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <label>I want to be a:</label>
+                                        {{ form.role }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <label>Password</label>
+                                        <input type="password" name="password1" placeholder="Password" required> 
+                                        </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <label>Confirm Password</label>
+                                        <input type="password" name="password2" placeholder="Confirm Password" required>
+                                        {% if form.password1.errors %}
+                                             <small class="text-danger">{{ form.password1.errors.0 }}</small>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput tf__login_check_area">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                I agree with <a href="#">Terms & Conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <button type="submit" class="common_btn">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <p class="or"><span>or</span></p>
+                        <p class="create_account">Already have an account? <a href="{% url 'login' %}">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

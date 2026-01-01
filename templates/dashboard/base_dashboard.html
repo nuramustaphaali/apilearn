@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="tf__breadcrumb_text">
+                    <h2>Dashboard</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf__courses_details mt_100 mb_100">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xl-3 col-lg-4">
+                <div class="tf__sidebar" id="sticky_sidebar">
+                    <div class="tf__sidebar_blog sidebar_item">
+                        <div class="text-center mb-4">
+                            {% if user.profile.avatar %}
+                                <img src="{{ user.profile.avatar.url }}" alt="avatar" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            {% else %}
+                                <img src="{% static 'images/client_img_1.png' %}" alt="avatar" class="rounded-circle mb-3" style="width: 100px;">
+                            {% endif %}
+                            <h5>{{ user.full_name|default:user.username }}</h5>
+                            <p class="text-muted">{{ user.get_role_display }}</p>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            {% if user.role == 'instructor' %}
+                                <li class="list-group-item"><a href="{% url 'instructor-dashboard' %}"><i class="fas fa-tachometer-alt me-2"></i> Dashboard</a></li>
+                                <li class="list-group-item"><a href="{% url 'course-create' %}"><i class="fas fa-plus-circle me-2"></i> Create Course</a></li>
+                            {% else %}
+                                <li class="list-group-item"><a href="{% url 'student-dashboard' %}"><i class="fas fa-book-reader me-2"></i> My Learning</a></li>
+                            {% endif %}
+                            
+                            <li class="list-group-item"><a href="{% url 'inbox' %}"><i class="fas fa-envelope me-2"></i> Inbox</a></li>
+                            <li class="list-group-item"><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-lg-8">
+                {% block dashboard_content %}{% endblock %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

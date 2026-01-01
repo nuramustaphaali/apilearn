@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Taking Quiz{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>{{ quiz.title }}</h2>
+                        <ul>
+                            <li>Pass Score: {{ quiz.pass_score }}%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tf__faq mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 m-auto">
+                    <div class="tf__faq_accordion">
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="accordion" id="quizAccordion">
+                                {% for question in quiz.questions.all %}
+                                    <div class="accordion-item mb-4 shadow-sm" style="border: 1px solid #eee;">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" style="background-color: #f8f9fa; color: #333; pointer-events: none;">
+                                                <strong>Q{{ forloop.counter }}: {{ question.text }}</strong>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                {% for answer in question.answers.all %}
+                                                    <div class="form-check mb-2" style="font-size: 16px;">
+                                                        <input class="form-check-input" type="radio" 
+                                                               name="question_{{ question.id }}" 
+                                                               value="{{ answer.id }}" 
+                                                               id="ans_{{ answer.id }}" required>
+                                                        <label class="form-check-label" for="ans_{{ answer.id }}" style="cursor: pointer;">
+                                                            {{ answer.text }}
+                                                        </label>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            
+                            <div class="text-center mt-5">
+                                <button type="submit" class="common_btn btn-lg w-100">Submit Answers</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

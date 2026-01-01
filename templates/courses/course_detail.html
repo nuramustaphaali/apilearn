@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ course.title }}{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>{{ course.title }}</h2>
+                        <ul>
+                            <li><a href="{% url 'course-list' %}">Home</a></li>
+                            <li><a href="#">Course Details</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tf__courses_details mt_195 xs_mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="tf__courses_details_area">
+                        
+                        <div class="tf__courses_details_img">
+                            {% if course.image %}
+                                <img src="{{ course.image.url }}" alt="{{ course.title }}" class="img-fluid w-100">
+                            {% else %}
+                                <img src="{% static 'images/courses_det_img.jpg' %}" alt="Default Course Image" class="img-fluid w-100">
+                            {% endif %}
+                        </div>
+
+                        <div class="tf__courses_details_header d-flex flex-wrap align-items-center">
+                            <div class="img">
+                                {% if course.instructor.profile.avatar %}
+                                    <img src="{{ course.instructor.profile.avatar.url }}" alt="instructor" class="img-fluid w-100">
+                                {% else %}
+                                    <img src="{% static 'images/client_img_1.png' %}" alt="instructor" class="img-fluid w-100">
+                                {% endif %}
+                            </div>
+                            <ul class="text d-flex flex-wrap align-items-center">
+                                <li>
+                                    <h4>Instructor</h4>
+                                    <p>{{ course.instructor.username }}</p>
+                                </li>
+                                <li>
+                                    <h4>Category</h4>
+                                    <p>{{ course.category.title|default:"General" }}</p>
+                                </li>
+                                <li>
+                                    <h4>Lessons</h4>
+                                    <p>{{ course.lessons.count }}</p>
+                                </li>
+                                <li>
+    <h4>Price</h4>
+    <p>
+        {% if course.price == 0 %}
+            <span class="text-success fw-bold">FREE</span>
+        {% else %}
+            ${{ course.price }}
+        {% endif %}
+    </p>
+</li>
+
+<li>
+    {% if is_enrolled or is_instructor %}
+        <a class="common_btn bg-success" href="#curriculum">Continue Learning</a>
+    
+    {% else %}
+        <a class="common_btn" href="{% url 'payment-initiate' course.id %}">
+            {% if course.price == 0 %}
+                Enroll for Free
+            {% else %}
+                Buy Now
+            {% endif %}
+        </a>
+    {% endif %}
+</li>
+                            </ul>
+                        </div>
+
+                        {% if is_enrolled %}
+                        <div class="mt-4 p-4 bg-light rounded border">
+                            <div class="d-flex justify-content-between">
+                                <h5>Your Progress</h5>
+                                <span>{{ progress }}%</span>
+                            </div>
+                            <div class="tf__barfiller_area mt-2">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: {{ progress }}%;" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            
+                            {% if next_lesson %}
+                                <div class="mt-3">
+                                    <a href="{{ next_lesson.video_url }}" target="_blank" class="common_btn">
+                                        ▶ Resume: {{ next_lesson.title }}
+                                    </a>
+                                </div>
+                            {% endif %}
+
+                            {% if certificate %}
+                                <div class="mt-3 alert alert-success text-center">
+                                    <h5>🎉 Course Completed!</h5>
+                                    <a href="{% url 'download-cert' certificate.id %}" class="common_btn bg-dark">Download Certificate</a>
+                                </div>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+
+                        <div class="tf__courses_det_text">
+                            <h2>{{ course.title }}</h2>
+
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Curriculum</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Description</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="tf__course_overview">
+                                        <h3>Course Content</h3>
+                                        
+                                        {% if is_enrolled or is_instructor %}
+                                            <div class="list-group">
+                                                {% for lesson in course.lessons.all %}
+                                                    <div class="list-group-item d-flex justify-content-between align-items-center mb-2 
+                                                        {% if lesson.id in completed_ids %}bg-light{% endif %}">
+                                                        <div>
+                                                            <h6 class="mb-0">
+                                                                {% if lesson.id in completed_ids %}
+                                                                    <i class="fas fa-check-circle text-success"></i>
+                                                                {% else %}
+                                                                    <i class="far fa-circle"></i>
+                                                                {% endif %}
+                                                                {{ lesson.title }}
+                                                            </h6>
+                                                            <small class="text-muted">{{ lesson.get_lesson_type_display }}</small>
+                                                        </div>
+                                                        <div class="btn-group">
+                                                            {% if lesson.video_url %}
+                                                                <a href="{{ lesson.video_url }}" target="_blank" class="btn btn-sm btn-outline-primary">Watch</a>
+                                                            {% endif %}
+                                                            
+                                                            <a href="{% url 'lesson-toggle' lesson.id %}" class="btn btn-sm btn-outline-secondary">
+                                                                {% if lesson.id in completed_ids %}Mark Undone{% else %}Done{% endif %}
+                                                            </a>
+
+                                                            {% if lesson.quiz %}
+                                                                <a href="{% url 'take-quiz' lesson.quiz.id %}" class="btn btn-sm btn-warning">Quiz</a>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+                                                {% empty %}
+                                                    <p>No lessons added yet.</p>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            <div class="alert alert-warning">
+                                                <i class="fas fa-lock"></i> Please <strong>Enroll</strong> to view the lessons and quizzes.
+                                            </div>
+                                            <ul>
+                                                {% for lesson in course.lessons.all %}
+                                                    <li style="color: #999; margin-bottom: 10px;">
+                                                        <i class="fas fa-lock"></i> Lesson {{ forloop.counter }}: {{ lesson.title }}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="tf__course_overview">
+                                        <h3>About this Course</h3>
+                                        <p>{{ course.description|linebreaks }}</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4">
+                    <div class="tf__sidebar" id="sticky_sidebar">
+                        
+                        {% if is_instructor %}
+                        <div class="tf__sidebar_blog sidebar_item">
+                            <h3>Instructor Tools</h3>
+                            <div class="d-grid gap-2">
+                                <a href="{% url 'lesson-add' course.id %}" class="common_btn bg-dark text-center">
+                                    + Add Lesson
+                                </a>
+                                <a href="{% url 'create-announcement' course.id %}" class="common_btn bg-secondary text-center">
+                                    📢 Post Announcement
+                                </a>
+                                <a href="{% url 'course-edit' course.pk %}" class="btn btn-outline-primary">Edit Course</a>
+                                <a href="{% url 'course-delete' course.pk %}" class="btn btn-outline-danger">Delete Course</a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <div class="tf__sidebar_search">
+                            <form>
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><i class="far fa-search"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="tf__sidebar_category sidebar_item">
+                            <h3>Categories</h3>
+                            <ul>
+                                <li><a href="#"> Development <span>(08)</span></a></li>
+                                <li><a href="#"> Design <span>(14)</span></a></li>
+                                <li><a href="#"> Marketing <span>(20)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

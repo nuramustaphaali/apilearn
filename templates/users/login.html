@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Sign In{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>sign in</h2>
+                        <ul>
+                            <li><a href="{% url 'course-list' %}">Home</a></li>
+                            <li><a href="#">sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tf__login mt_195 xs_mt_95 mb_100">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1.5s">
+                <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
+                    <div class="tf__login_area">
+                        <h2>Welcome to ApiLearn!</h2>
+                        <p>sign in to continue</p>
+                        
+                        <form method="post" action="{% url 'login' %}">
+                            {% csrf_token %}
+                            
+                            {% if form.errors %}
+                                <div class="alert alert-danger">
+                                    <p class="mb-0">Invalid email or password. Please try again.</p>
+                                </div>
+                            {% endif %}
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <label>email</label>
+                                        <input type="email" name="username" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <label>password</label>
+                                        <input type="password" name="password" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput tf__login_check_area">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Remember Me
+                                            </label>
+                                        </div>
+                                        <a href="#">Forget Password ?</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="tf__login_imput">
+                                        <button type="submit" class="common_btn">login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <p class="or"><span>or</span></p>
+                        <p class="create_account">Dont’t have an account ? <a href="{% url 'register' %}">Create Account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+    <section class="tf__courses_details mt_195 xs_mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-8 m-auto">
+                    <div class="tf__courses_details_area text-center p-5" style="border: 2px solid {% if passed %}#28a745{% else %}#dc3545{% endif %}; border-radius: 10px;">
+                        
+                        <div class="mb-4">
+                            {% if passed %}
+                                <img src="{% static 'images/work_img_3.jpg' %}" alt="Success" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                            {% else %}
+                                <img src="{% static 'images/work_img_4.jpg' %}" alt="Fail" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                            {% endif %}
+                        </div>
+
+                        {% if passed %}
+                            <h2 class="text-success mb-3">Congratulations! 🎉</h2>
+                            <p class="lead">You passed the quiz for <strong>{{ quiz.lesson.title }}</strong>.</p>
+                        {% else %}
+                            <h2 class="text-danger mb-3">Keep Trying! 😔</h2>
+                            <p class="lead">You didn't reach the passing score for <strong>{{ quiz.lesson.title }}</strong>.</p>
+                        {% endif %}
+
+                        <div class="row mt-4 mb-4 justify-content-center">
+                            <div class="col-4">
+                                <h5>Your Score</h5>
+                                <h1 class="display-4 fw-bold">{{ score }}%</h1>
+                            </div>
+                            <div class="col-4">
+                                <h5>Pass Mark</h5>
+                                <h1 class="display-4 text-muted">{{ quiz.pass_score }}%</h1>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="{% url 'course-detail' quiz.lesson.course.id %}" class="common_btn">Back to Course</a>
+                            {% if not passed %}
+                                <a href="{% url 'take-quiz' quiz.id %}" class="common_btn bg-secondary">Retake Quiz</a>
+                            {% endif %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

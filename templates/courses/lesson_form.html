@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Manage Lesson{% endblock %}
+
+{% block content %}
+
+    <section class="tf__breadcrumb" style="background: url({% static 'images/breadcrumb_bg_1.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tf__breadcrumb_text">
+                        <h2>Manage Lesson</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tf__contact mt_100 mb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 m-auto">
+                    <div class="tf__contact_form">
+                        <h3>Lesson Content</h3>
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% if form.errors %}
+                                <div class="alert alert-danger">{{ form.errors }}</div>
+                            {% endif %}
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Lesson Title</label>
+                                        {{ form.title }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6">
+                                    <div class="tf__contact_form_input">
+                                        <label>Lesson Type</label>
+                                        {{ form.lesson_type }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6">
+                                    <div class="tf__contact_form_input">
+                                        <label>Order Number</label>
+                                        {{ form.order }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Video URL (YouTube/Vimeo)</label>
+                                        {{ form.video_url }}
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Upload PDF (Optional)</label>
+                                        {{ form.pdf_file }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <label>Text Content</label>
+                                        {{ form.text_content }}
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="tf__contact_form_input">
+                                        <button type="submit" class="common_btn">Save Lesson</button>
+                                        <a href="javascript:history.back()" class="btn btn-outline-secondary ms-3">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
